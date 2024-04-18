@@ -1,0 +1,11 @@
+atuin/
+configstore/
+envman/
+flutter/
+github-copilot/
+iterm2/
+jgit/
+kitty/
+nvim/
+zed/
+starship.toml

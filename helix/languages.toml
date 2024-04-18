@@ -1,0 +1,18 @@
+
+# [[language]]
+# name = "protobuf"
+# scope = "source.proto"
+# injection-regex = "protobuf"
+# file-types = ["proto"]
+# language-servers = [ "bufls", "pbkit" ]
+# # comment-token = "//"
+# # block-comment-tokens = { start = "/*", end = "*/" }
+# # indent = { tab-width = 2, unit = "  " }
+
+# [[grammar]]
+# name = "protobuf"
+# source = { git = "https://github.com/yusdacra/tree-sitter-protobuf", rev = "19c211a01434d9f03efff99f85e19f967591b175"}
+
+# [language-server]
+# bufls = { command = "bufls", args = ["serve"] }
+# pbkit = { command = "pb", args = [ "lsp" ] }
