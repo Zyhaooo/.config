@@ -1,7 +1,5 @@
-# theme = "onelight_local"
-# theme = "github_dark_high_contrast"
-theme="ferra"
-# theme="random"
+# theme="base16_transparent"
+theme="flatwhite"
 
 [editor]
 true-color=true # 真彩
@@ -23,9 +21,11 @@ display-messages=true # 	在 statusline 下方显示LSP进度消息
 display-inlay-hints=true # 
 auto-signature-help=true # 自动弹出签名帮助(和参数提示)
 display-signature-help-docs=true # 在签名帮助弹出菜单中显示文档
+goto-reference-include-declaration=false # 查找引用的时候不显示定义
 
 [editor.soft-wrap]
 enable=true
+# wrap-at-text-width=true
 
 [editor.indent-guides]
 render = true
@@ -52,6 +52,9 @@ mode.select = "SELECT"
 [keys.normal]
 C-q = ":bc" # 关闭当前缓冲区
 C-r = [":w",":rla",":lsp-restart"] # 重新加载当前工作区
+
+[keys.normal.space]
+F = "file_picker_in_current_buffer_directory"
 
 [keys.insert]
 "C-s" = ["normal_mode",":w"] # ctrl+s 保存文件

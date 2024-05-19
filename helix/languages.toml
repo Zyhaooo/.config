@@ -16,3 +16,18 @@
 # [language-server]
 # bufls = { command = "bufls", args = ["serve"] }
 # pbkit = { command = "pb", args = [ "lsp" ] }
+
+# [[language]]
+# name = "go"
+# config = { "formatting.gofumpt" = true, "ui.diagnostic.staticcheck" = true }"assignVariableType" = true, 
+[language-server.gopls]
+command = "gopls"
+config = { "gofumpt" = true, "local" = "goimports", "semanticTokens" = true, "staticcheck" = true, "verboseOutput" = true, "analyses" = { "fieldalignment" = true, "nilness" = true, unusedparams = true, unusedwrite = true, useany = true }, usePlaceholders = true, completeUnimported = true, hints = {  "compositeLiteralFields" = true, "compositeLiteralTypes" = true, "constantValues" = true, "functionTypeParameters" = true, "parameterNames" = true, "rangeVariableTypes" = true } }
+
+
+[[language]]
+name = "dart"
+
+[language-server.dart]
+command = "dart"
+config = {"editor.inlayHints.enabled" = true}

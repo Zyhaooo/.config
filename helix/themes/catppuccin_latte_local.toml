@@ -1,3 +1,0 @@
-inherits="catppuccin_latte"
-
-"diagnostic.error" = { fg = "errorfg", bg = "errorbg", underline = { color = "red" } }
